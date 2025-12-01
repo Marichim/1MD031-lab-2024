@@ -1,1 +1,101 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+   </head>
+
+   <body>
+   <header>
+        <h1>Welcome to BurgerHeaven Online</h1>
+   </header>
+   <!--<nav> Menu items </nav>-->
+   <main>
+        <section>        
+            <h2>Select burger</h2>
+            This is where you execute burger selection
+            <div style="text-align: left;">
+                <div style="display: inline-block; vertical-align: top;">
+                    <h3>The Fire Burger</h3>
+                    <img src="/img/Fireburger.png" alt="Fire Burger" style="width:350px; height:285px;">
+                    <ul>
+                        <li>750 kCal</li>
+                        <li>Contains lactose</li>
+                        <li>Contains gluten</li>
+                    </ul>
+                </div>
+
+                <div style="display: inline-block; vertical-align: top;">
+                    <h3>Fried Turkey Burger</h3>
+                    <img src="/img/Fried Turkey Burger.png" alt="Turkey Burger" style="width:350px; height:285px;">
+                    <ul>
+                        <li>600 kCal</li>
+                        <li>Contains lactose</li>
+                    </ul>
+                </div>
+
+                <div style="display: inline-block; vertical-align: top;">
+                    <h3>A Double w/ Cheese</h3>
+                    <img src="/img/A_Double_Cheese.png" alt="Double w/ Cheese" style="width:350px; height:285px;">
+                    <ul>
+                        <li>1800 kCal</li>
+                        <li>Contains lactose</li>
+                        <li>Contains gluten</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+     
+        <section>
+            <h2>Customer information</h2>
+            This is where you provide necessary information
+
+            <h3>Delivery information:</h3>
+
+            <form>
+                <p>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="street" required="required" placeholder="Street name">
+                </p>
+                <p>
+                    <label for="house">House</label><br>
+                    <input type="text" id="house" name="house" required="required" placeholder="House number">
+                </p>
+
+                <p>
+                <label for="payment">Payment options</label><br>
+                <select id="payment" name="payment">
+                    <option>Credit card</option>
+                    <option>Swish</option>
+                    <option>PayPal</option>
+                    <option>Apple Pay</option>
+                </select>
+                </p>
+
+                <p>
+                <label>Gender</label><br>
+                    <label><input type="radio" name="gender"> Male</label><br>
+                    <label><input type="radio" name="gender"> Female</label><br>
+                    <label><input type="radio" name="gender"> Non-binary</label><br>
+                    <label><input type="radio" name="gender"> Undisclosed</label>
+                </p>
+            </form>
+        </section>
+        <button type="submit">
+            <img src="/img/green check mark in circle.png" style="width:20px; height:20px;">
+            Send Info
+        </button>
+   </main>
+   <footer>
+      End notes
+   </footer>
+   </body>
+</html>
