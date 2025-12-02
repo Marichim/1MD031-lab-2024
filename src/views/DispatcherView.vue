@@ -5,6 +5,9 @@
           #{{ key }}
 
           <div>
+            <li v-for="(amount, burgerName) in order.orderItems">
+              {{ burgerName }} : {{ amount }}
+            </li>
             Name: {{ order.details.fullname }}<br>
             Email: {{ order.details.email }}<br>
             Gender: {{ order.details.gender }}<br>
