@@ -2,7 +2,15 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}
+
+          <div>
+            Name: {{ order.details.fullname }}<br>
+            Email: {{ order.details.email }}<br>
+            Gender: {{ order.details.gender }}<br>
+            Payment: {{ order.details.payment }}
+          </div>
+          <hr>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -21,7 +29,7 @@
     name: 'DispatcherView',
     data: function () {
       return {
-        orders: null,
+        orders: {}
       }
     },
     created: function () {
